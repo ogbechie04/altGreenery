@@ -1,21 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* -------- colors -------- */
+  --primary-100: #BBEDD7;
+  --primary-200: #99E5C3;
+  --primary-300: #78DCAF;
+  --primary-400: #56D39B;
+  --primary-600: #2CA870;
+  --primary-800: #1A6443;
+  --primary-1000: #0C2F1F;
+  --secondary-100: #FDF4D0;
+  --secondary-500: #F7C814;
+  --neutral-100: #EDEDED;
+  --neutral-500: #C6C6C6;
+  --neutral-1100: #8C8C8C;
+  --neutral-1900: #3E3E3E;
+  --neutral-2000: #343434;
+
+  /* -------- fonts -------- */
+  --roboto: 'Roboto', sans-serif;
+  --arimo: 'Arimo', sans-serif;
+  --fraunces: 'Fraunces', serif;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* color: var(--foreground);
+  background: var(--background); */
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
