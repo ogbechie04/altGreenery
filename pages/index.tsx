@@ -1,4 +1,3 @@
-import Button from "@/components/Button";
 import FoodInsecurity from "@/components/LandingPageComponents/FoodInsecuritySection";
 import Footer from "@/components/LandingPageComponents/Footer";
 import HeroSection from "@/components/LandingPageComponents/HeroSection";
