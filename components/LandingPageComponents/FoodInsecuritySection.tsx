@@ -3,7 +3,7 @@ import React from "react";
 
 const FoodInsecurity = () => {
   return (
-    <div className="flex flex-col relative items-center justify-center py-32 px-[12.8125rem]">
+    <div className="flex flex-col relative items-center justify-center py-32 px-[12.8125rem] w-full">
       <div className="absolute left-[80px] bottom-[160px]">
         <Image
           src={"/images/food-insecurity-2.svg"}

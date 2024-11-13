@@ -17,6 +17,7 @@
   --secondary-100: #FDF4D0;
   --secondary-500: #F7C814;
   --neutral-100: #EDEDED;
+  --neutral-300: #DADADA;
   --neutral-500: #C6C6C6;
   --neutral-1100: #8C8C8C;
   --neutral-1900: #3E3E3E;
@@ -35,8 +36,11 @@
   }
 } */
 
-body {
-  /* color: var(--foreground);
-  background: var(--background); */
-  /* font-family: Arial, Helvetica, sans-serif; */
+html, body {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }

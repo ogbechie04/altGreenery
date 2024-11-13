@@ -3,7 +3,7 @@ import React from "react";
 
 const WhatSetsUsApart = () => {
   return (
-    <div className="flex flex-col justify-center px-[6.25rem] pt-32 pb-52 bg-[#FAFAFA]">
+    <div className="flex flex-col justify-center px-[6.25rem] pt-32 pb-52 bg-[#FAFAFA] w-full">
       <h3 className="font-fraunces text-primary-1000 text-[2.5rem] font-black whitespace-nowrap z-10 self-center">
         What Sets Us Apart
       </h3>

@@ -27,6 +27,7 @@ const config: Config = {
         "secondary-100": `var(--secondary-100)`,
         "secondary-500": "var(--secondary-500)",
         "neutral-100": "var(--neutral-100)",
+        "neutral-300": "var(--neutral-300)",
         "neutral-500": "var(--neutral-500)",
         "neutral-1100": "var(--neutral-1100)",
         "neutral-1900": "var(--neutral-1900)",
