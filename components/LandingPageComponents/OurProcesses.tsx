@@ -1,7 +1,11 @@
 import React from "react";
+import { useTheme, useMediaQuery } from "@mui/material";
 import Image from "next/image";
 
 const OurProcesses = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   const processes = [
     {
       icon: "/icon/sustainable-farming.svg",
@@ -30,29 +34,29 @@ const OurProcesses = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center px-[6.25rem] pt-16 pb-[16.5rem] gap-[12.5rem]">
-      <h3 className="font-fraunces text-primary-1000 text-[2.5rem] font-black whitespace-nowrap z-10 self-center">
+    <div className="flex flex-col justify-center px-5 lg:px-[6.25rem] pt-16 pb-32 lg:pb-[16.5rem] gap-32 lg:gap-[12.5rem] w-full">
+      <h3 className="font-fraunces text-primary-1000 text-[1.75rem] lg:text-[2.5rem] font-black whitespace-nowrap z-10 self-center">
         Our 4 Step Process
       </h3>
-      <div className="flex gap-6 items-center justify-center px-2">
+      <div className="flex flex-col lg:flex-row gap-10 lg:gap-6 items-center justify-center px-2">
         {processes.map((process, index) => (
           <div
             key={index}
             className="flex flex-col gap-8 items-center justify-center max-w-[18.25rem]"
           >
-            <div className="p-[2.625rem] bg-[#BBEDD733] rounded-full items-center justify-center">
+            <div className="p-[2.25rem] lg:p-[2.625rem] bg-[#BBEDD733] rounded-full items-center justify-center">
               <Image
                 src={process.icon}
                 alt={process.title}
-                width={102}
-                height={102}
+                width={isMobile ? 87 : 102}
+                height={isMobile ? 87 : 102}
               />
             </div>
             <div className="text-center flex flex-col gap-6 items-center">
-              <p className="text-primary-800 text-2xl font-fraunces font-black leading-9 max-w-60">
+              <p className="text-primary-800 text-xl lg:text-2xl font-fraunces font-black leading-9 lg:max-w-60">
                 {process.title}
               </p>
-              <p className="font-arimo text-neutral-1100 text-lg leading-6">
+              <p className="font-arimo text-neutral-1100 lg:text-lg leading-6">
                 {process.description}
               </p>
             </div>

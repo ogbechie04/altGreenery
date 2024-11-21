@@ -9,15 +9,15 @@ import WordsFromCEO from "@/components/LandingPageComponents/WordsFromCEO";
 export default function Home() {
   return (
     <div className=" flex flex-col items-center relative">
-      <div className="flex items-center justify-center w-full absolute z-10 mt-[3.5625rem]">
+      <div className="flex items-center justify-center w-full absolute z-10 mt-10 lg:mt-[3.5625rem]">
         <NavBar variant="dark" />
-        </div>
-        <HeroSection />
-        <FoodInsecurity />
-        <WhatSetsUsApart />
-        <WordsFromCEO />
-        <OurProcesses />
-        <Footer />
+      </div>
+      <HeroSection />
+      <FoodInsecurity />
+      <WhatSetsUsApart />
+      <WordsFromCEO />
+      <OurProcesses />
+      <Footer />
     </div>
   );
 }
