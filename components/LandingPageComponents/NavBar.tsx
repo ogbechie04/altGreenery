@@ -61,7 +61,7 @@ const NavBar: React.FC<NavBarProps> = ({ variant, className }) => {
         }`}
       >
         <Link href={"/"}>Home</Link>
-        <Link href={""}>About Us</Link>
+        <Link href={"/aboutUs"}>About Us</Link>
       </div>
       {/* -------- desktop nav button -------- */}
       <div className={`${isMobile ? "hidden" : "block"}`}>
@@ -121,7 +121,7 @@ const NavBar: React.FC<NavBarProps> = ({ variant, className }) => {
                 className={`font-arimo text-lg text-primary-300 flex flex-col items-center gap-5 whitespace-nowrap`}
               >
                 <Link href={"/"}>Home</Link>
-                <Link href={""}>About Us</Link>
+                <Link href={"/aboutUs"}>About Us</Link>
                 {/* -------- desktop nav button -------- */}
                 <div className={`mt-5 w-full`}>
                   <Button

@@ -33,6 +33,7 @@ const config: Config = {
         "neutral-900": "var(--neutral-900)",
         "neutral-1000": "var(--neutral-1000)",
         "neutral-1100": "var(--neutral-1100)",
+        "neutral-1400": "var(--neutral-1400)",
         "neutral-1900": "var(--neutral-1900)",
         "neutral-2000": "var(--neutral-2000)",
       },
