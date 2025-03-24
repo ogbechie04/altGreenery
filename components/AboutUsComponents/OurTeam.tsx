@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 const OurTeam = () => {
@@ -48,7 +47,7 @@ const OurTeam = () => {
         {theTeam.map((member, index) => (
           <div key={index} className={`flex flex-col gap-8 items-center ${index === 0 ? 'col-span-4' : ''}`}>
             <div className="rounded-2xl">
-                <Image className="rounded-2xl" src={member.image} alt={member.name} width={292} height={384} />
+                <img className="rounded-2xl" src={member.image} alt={member.name} width={292} height={384} />
             </div>
             <div className="text-center">
                 <h3 className="text-neutral-1900 text-[24px] font-bold">{member.name}</h3>
