@@ -16,6 +16,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "AltGreenery",
   description: "",
+  icons: {
+    icon: '/logomark.svg'
+  }
 };
 
 export default function RootLayout({
@@ -25,6 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
